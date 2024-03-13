@@ -8,7 +8,7 @@
     transition: 3s;
     background-color:rgb(255, 215, 0);
     width: 100%;
-    padding: 10px 20px;
+    padding: 5px 6px;
 }
 .navmenu{
     display: flex;
@@ -35,44 +35,29 @@
     transition: 1.5s;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:center;
   }
-  
   .heroc {
     font-size: xx-large;
+    font-weight: 400;
   }
   
   .bttn {
-    font-size: medium;
+    font-size: 1.8rem;
     font-weight: 500;
-    background-color: rgb(0, 0, 0);
-    color: white;
-    padding: 10px 20px;
-    margin: 0 auto;
-    margin-bottom: 2rem; 
-    width: fit-content;
-  }
-  
-  .heroc h1 {
-    text-align: center;
-    font-weight: bolder;
     color: rgb(0, 0, 0);
-    transition: 3s;
-    margin-bottom: 2rem; 
   }
   
   .heroc p {
-    margin-bottom: 2rem;
+    margin-top: 4rem;
     color: rgb(0, 0, 0);
     text-align: center;
     transition: 3s;
   }
-  
   .me1-btn {
     margin-top: 2rem;
     display: flex;
     justify-content: center;
-    gap: 50px;
   }
   .btn1 {
     padding: 20px 40px;
@@ -102,6 +87,21 @@
     margin-top: 3rem;
     font-size: xx-large;
   }
+  .img{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr ;
+    row-gap: rem;
+    column-gap: 10rem;
+    width: 70rem;
+    /* height: 50rem; */
+  }
+  .img img{
+    width: 100%;
+    height: 100%;
+    margin-top:2rem;
+    margin-bottom:4rem;
+  }
   .enquiries{
     display: grid;
     place-items: center;
@@ -116,4 +116,16 @@
   font-size: larger;
   font-weight: 700;
   }
-  
+ .sinko3{
+background-color:grey;
+display: grid;
+}
+.heroc1{
+  display: grid;
+  place-items: center;
+  margin-top: 2rem; 
+}
+.heroc1 p{
+  font-size: larger;
+  font-weight: 500;
+}
