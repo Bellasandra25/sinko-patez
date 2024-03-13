@@ -91,7 +91,7 @@
     display: grid;
     place-items: center;
     grid-template-columns: 1fr 1fr 1fr ;
-    row-gap: rem;
+    row-gap: 2rem;
     column-gap: 10rem;
     width: 70rem;
     /* height: 50rem; */
