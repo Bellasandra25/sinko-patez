@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header {
+    position: fixed;
+    transition: 3s;
+    background-color:white;
+    width: 100%;
+    padding: 5px 6px;
+}
+.navmenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+.about1{
+    background-color:black;
+    color: gold;
+    display: grid;
+    min-height: 100vh;
+    transition: 1.5s;
+    place-content:center;
+}
+.heroc1{
+      display: grid;
+      place-items: center;
+      margin-top: 2rem; 
+    }
+    .heroc1 p{
+      font-size: larger;
+      font-weight: 500;
+    }

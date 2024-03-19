@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header {
+    position: fixed;
+    transition: 3s;
+    background-color:rgb(255, 255, 255);
+    width: 100%;
+    padding: 5px 6px;
+}
+.navmenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+.cta-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+.catalogue{
+    background-color:rgb(167, 142, 2);
+    display: grid;
+    }
+.heroc{
+    display: grid;
+    place-items: center;
+    margin-top: 2rem; 
+  }
+  .heroc p{
+    font-size: larger;
+    font-weight: 500;
+  }
+.img{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr ;
+    row-gap: 2rem;
+    column-gap: 10rem;
+    width: 70rem;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+    margin-top:2rem;
+    margin-bottom:4rem;
+}
