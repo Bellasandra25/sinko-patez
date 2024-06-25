@@ -1,5 +1,6 @@
 :root {
 	--gold: gold;
+  --goldLight: rgba(204, 179, 38, 0.938);
 	--black: black;
 	--white: white;
 }
@@ -32,7 +33,7 @@ a {
 	display: flex;
 	align-items: center;
 	height: 100%;
-	padding: 12px 50px;
+	padding: 12px 20px;
 }
 .headerLogo {
 	cursor: pointer;
@@ -95,7 +96,7 @@ a {
 .sinko1 {
 	position: relative;
 	display: flex;
-	height: 100vh;
+	height: calc(100vh - 50px);
 	background: url("./images//-6050730509513901087_121.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -104,7 +105,6 @@ a {
 .sinko1Overlay {
 	position: absolute;
 	background: #14040467;
-	top: 50px;
 	height: calc(100vh - 50px);
 	width: 100%;
 	z-index: 1;
@@ -165,7 +165,7 @@ a {
 
 .image-wrapper {
 	background-color: var(--black);
-  padding: 32px 16px;
+  padding: 0 10px;
   width: 100%;
 }
 .sinko2-img-container {
@@ -187,13 +187,14 @@ a {
 /* medium screen */
 
 .sinko2-img {
-	width: 250px;
-	height: 300px;
+	width: 200px;
+	height: 250px;
 }
 
 footer {
-	background-color: var(--black);
-	color: var(--gold);
+	background-color: var(--goldLight);
+	color: var(--black);
+  padding: 20px ;
 }
 
 .enquiryContainer {
@@ -205,25 +206,21 @@ footer {
 @media screen and (max-width: 420px) {
 	.enquiryContainer {
 		flex-direction: column;
+    align-items: flex-start;
 	}
+
+
+.sinko3-text {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  
 }
 
-.sinko3-container {
-	display: grid;
-	padding: 25px 50px;
-}
-.sinko3-text {
-	font-size: 1.2rem;
-	padding-bottom: 16px;
-}
 .griditems {
 	display: grid;
-	/* margin-left: 300px; */
-	flex: 1 1 0%;
-
-	/* place-items:center; */
-	/* grid-template-columns: 1fr 1fr; */
-	gap: 30px;
+  width: 100%;
+	gap: 10px;
+  margin-bottom: 20px;
 }
 .linkSpan {
 	margin-right: 1em;
@@ -236,16 +233,28 @@ footer {
     }
   }  */
 .linkText {
-	width: 100%;
-}
-.nav6 {
-	font-size: 1rem;
-	color: var(--gold);
-	display: flex;
+	width: fit-content;
 }
 
-small {
-	margin-top: 60px;
-	width: 100%;
+.linkText:hover{
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.footer-icon {
+  margin-right: 5px;
+  font-size: 1.1rem;
+}
+
+.nav6 {
+font-size: 0.8rem;
+width: 100%;
+}
+
+.small {
+	font-size: 0.7rem;
 	text-align: center;
+  color: rgba(255, 255, 255, 0.521);
+}
 }
