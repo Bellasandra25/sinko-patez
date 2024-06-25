@@ -66,7 +66,6 @@ width: 20px;
 .cta-menu {
 	width: 20%;
   
-  border: 1px solid red;
   display: block;
 }
 
@@ -100,7 +99,6 @@ a {
     justify-content: center;
     position: relative;
     font-size: 1.2rem;
-    border: 1px solid red;
     height: 100%;
     width: 20px;
   }
@@ -116,7 +114,7 @@ a {
   .mobile-menu {
     display: none;
     padding: 20px 10px;
-    background-color: rgba(255, 255, 255, 0.89);
+    background-color: rgba(255, 255, 255, 0.952);
     position: absolute;
     height: 100vh;
     width: 50%;
@@ -153,11 +151,13 @@ a {
 }
 
 .herocc {
+margin-top: auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: end;
 	padding: 50px;
 	z-index: 2;
+  height: 300px;
 }
 .sinko1-text {
 	color: var(--white);
