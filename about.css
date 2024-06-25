@@ -1,37 +1,68 @@
+:root{
+    --gold:gold;
+    --black:black;
+    --white:white;
+  }
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 .header {
+  height: 50px;
+  width: 100%;
     position: fixed;
-    transition: 3s;
-    background-color:white;
-    width: 100%;
-    padding: 5px 6px;
+    background-color:var(--white);
+    z-index: 2;
+    /* padding:16px; */
+    box-shadow: 1px 1px 20px var(--black);
 }
+
 .navmenu{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100%;
+    padding:12px;
 }
-a{
-    text-decoration: none;
+.headerLogo{
+  cursor: pointer;
 }
+.headerText {
+  font-size: 1.2rem;
+  color: var(--black);
+  font-weight: 300;
+}
+
+.cta-menu {
+  width: 25%;
+}
+  .menu{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border:  1px solid red;
+    color: black;
+  }
+  
+  a{
+    color: black;
+  }
+  /* Navbar Ends */
 .about1{
     background-color:black;
     color: gold;
     display: grid;
-    min-height: 100vh;
+    height: 100vh;
+    
     transition: 1.5s;
     place-content:center;
 }
-.heroc1{
-      display: grid;
-      place-items: center;
-      margin-top: 2rem; 
-    }
-    .heroc1 p{
-      font-size: larger;
-      font-weight: 500;
-    }
+    .footer{
+        background-color: white;
+        display: grid;
+        place-items: center;
+        position: fixed;
+        bottom: 0;    
+       }

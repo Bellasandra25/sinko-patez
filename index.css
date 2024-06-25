@@ -6,7 +6,6 @@
 
 body{
   font-family: "Poppins", sans-serif;
-  overflow: hidden;
 }
 
 *{
@@ -14,72 +13,81 @@ body{
     margin: 0;
     box-sizing: border-box;
 }
+
+a {
+  text-decoration: none;
+}
+
 .header {
   height: 50px;
-   width: 100vw;
-    position: absolute;
+  width: 100%;
+    position: fixed;
     background-color:var(--white);
-    z-index: 1000;
+    z-index: 10;
+    /* padding:16px; */
     box-shadow: 1px 1px 20px var(--black);
 }
 
 .navmenu{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     height: 100%;
+    padding:12px 50px;
 }
-.bttn {
+.headerLogo{
+  cursor: pointer;
+}
+
+.headerText {
+  flex: 1 1 0%;
+  text-align: center;
   font-size: 1.2rem;
   color: var(--black);
   font-weight: 300;
 }
 
-  .fa-solid{
-    color: #0e0d0d;
+.cta-menu {
+  width: 20%;
+}
+  .menu{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+    color: black;
   }
-  /* #nav{
-    display: none;
-    width: 30rem;
-    padding: 5rem;
-    background-color: var(--gold);
-    top: 100%;
-    right: 5%;
-  } */
+  
+  a{
+    color: black;
+  }
 /* sinko1 section */
-
-  .heroc {
-    position: relative;
-    top: 50px;
-    background-color:var(--gold);
-    overflow: hidden;
-    
-  }
   .sinko1 {
     position: relative;
-    background-color: rgb(26, 20, 20);
+    display: flex;
     height: 100vh;
-    width: 100vw;
-    overflow: hidden;
+    background: url('./images//-6050730509513901087_121.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
-  .sinko1-img{
+  .sinko1Overlay {
+    position: absolute;
+    background: #14040467;
+    top: 50px;
+    height: calc(100vh - 50px);
     width: 100%;
-    height: 100%;
-    opacity: 0.6;
-    overflow-clip-margin: content-box;
+    z-index: 1;
   }
+
  .herocc{
-  position: absolute;
-  width: 80%;
-  padding: 32px;
-  bottom: 0px;
   display: flex;
   flex-direction: column;
   justify-content: end;
+  padding: 50px;
+  z-index: 2;
  }
   .sinko1-text{
   color: var(--white);
+  margin-bottom: 30px;
   font-size: 1.2rem;
   font-weight: 300;
   }
@@ -93,23 +101,20 @@ body{
     background-color: var(--white);
     border: none;
     width: fit-content;
+    border-radius: 5px;
   }
 
   .btn1:hover {
     cursor: pointer;
     background-color: var(--gold);
-    transition: 2s;
+    transition: 1300ms;
   }
 /* sinko2 section */
 
   .sinko2-container{
     padding: 32px 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
     color: var(--black);
-    width: 100%;
   }
   
   .sinko2-title{
@@ -120,30 +125,37 @@ body{
     font-size: 1rem;
     font-style: inherit;
     line-height: 1.5rem;
+    margin: 30px auto;
+    max-width: 60%;
+    
   }
   .sinko2-img-container{
-    display: grid;
-    grid-template-columns: auto;
+display: grid;
+grid-template-columns: repeat(5, 1fr);
     grid-gap: 10px;
     background-color: var(--black);
     padding: 10px;
   }
+  
   .sinko2-img{
+    width: 250px;
     height: 300px;
-    width: 100%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+  }
+
+  footer {
+    background-color: var(--black);
+    color: var(--gold);
+    
+  }
+
+  .enquiryContainer {
+    display: flex;
+    align-items: center;
+    
   }
   .sinko3-container{
-    background-color: var(--white);
     display: grid;
-    place-items:center;
-    padding: 32px 16px;
-    position: relative;
-    height: 100%;
-    width: 100vw;
-    overflow: hidden;
+    padding: 25px 50px;
   }
   .sinko3-text{
     font-size: 1.2rem;
@@ -151,46 +163,30 @@ body{
   }
   .griditems{
     display: grid;
-    place-items:center;
-    grid-template-columns: 1fr 1fr;
+    margin-left: 300px;
+    flex: 1 1 0%;
+    
+    /* place-items:center; */
+    /* grid-template-columns: 1fr 1fr; */
     gap:30px;
+  }
+  .linkSpan {
+    margin-right: 30px;
+    width: 100px;
+  }
+  .linkText{
+    width: 100%;
   }
   .nav6{
    font-size: 1rem; 
-  }
-  .footer{
-    font-size: 1.3rem;
-    height: 20px;
-    display: grid;
-    place-items: center;
-    background-color: var(--black);
-    color: var(--gold);
+   color: var(--gold);
+   display: flex;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* gaps */
-.gap1{
-height: 20px;
-}
-.gap2{
-height: 10px;
-}
-
+  small {
+    margin-top: 60px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  
