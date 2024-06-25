@@ -29,6 +29,12 @@ a {
 	box-shadow: 1px 1px 20px var(--black);
 }
 
+@media (max-width: 420px) {
+  .header {
+    position: sticky;
+  }
+}
+
 .navmenu {
 	display: flex;
 	align-items: center;
@@ -59,6 +65,8 @@ width: 20px;
 /* desktop menu starts */
 .cta-menu {
 	width: 20%;
+  
+  border: 1px solid red;
   display: block;
 }
 
@@ -81,13 +89,47 @@ a {
 /* desktop menu ends */
 
 /* mobile menu starts */
-.mobile-menu {
+.mobile-menu, .hamburger{
   display: none;
 }
 
 @media (max-width: 420px){
+  .hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 1.2rem;
+    border: 1px solid red;
+    height: 100%;
+    width: 20px;
+  }
+
+  .fa-times, .fa-bars {
+    position: absolute;    
+  }
+
+  .fa-times {
+    display: none;
+  }
+
   .mobile-menu {
-    display: block;
+    display: none;
+    padding: 20px 10px;
+    background-color: rgba(255, 255, 255, 0.89);
+    position: absolute;
+    height: 100vh;
+    width: 50%;
+    right: 0;
+    top: 100%;
+    z-index: 9;
+  }
+
+  .mobile-menulink{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+    
   }
 }
 /* mobile menu ends */
@@ -96,7 +138,7 @@ a {
 .sinko1 {
 	position: relative;
 	display: flex;
-	height: calc(100vh - 50px);
+	height: 100vh;
 	background: url("./images//-6050730509513901087_121.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -105,7 +147,7 @@ a {
 .sinko1Overlay {
 	position: absolute;
 	background: #14040467;
-	height: calc(100vh - 50px);
+	height: 100vh;
 	width: 100%;
 	z-index: 1;
 }
