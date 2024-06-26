@@ -18,3 +18,14 @@ mobileClose.addEventListener('click', function() {
     mobileOpen.style.display = "block"
     mobileClose.style.display = "none"
 })
+// mobileOpen.addEventListener('click', ()=>{
+// if (mobileMenu.style.display ="block") {
+//     mobileOpen.style.display = "none"
+//     mobileClose.style.display = "block"
+// } else if(mobileMenu.style.display = "none"){ mobileOpen.style.display = "block"
+//    mobileClose.style.display = "none"       
+// }else{
+//   mobileClose.style.display = "none"   
+// }
+// })
+
