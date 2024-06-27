@@ -70,17 +70,11 @@ a {
 }
 
 /* smallest screen */
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 650px) {
 	.cta-menu {
 		display: none;
 	}
 }
-/* medium screen */
-/* @media (min-width: 321px) and (max-width: 768px) {
-	.cta-menu {
-	  display: block;
-	}
-  } */
 
 .menu {
 	display: flex;
@@ -100,7 +94,7 @@ a {
 	display: none;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 650px) {
 	.hamburger {
 		display: flex;
 		align-items: center;
@@ -153,7 +147,7 @@ a {
 
 .sinko1Overlay {
 	position: absolute;
-	background: #14040467;
+	background: #140404af;
 	height: 100vh;
 	width: 100%;
 	z-index: 1;
@@ -174,20 +168,18 @@ a {
 	font-size: 1.2rem;
 	font-weight: 300;
 }
-/* medium screen */
-@media (min-width: 320px) and(max-width:768px) {
-	.sinko1-text {
-		line-height: 2.2rem;
-		font-size: 1.8rem;
-	}
-	.btn1 {
-		font-size: 2.5rem;
-		font-weight: 700;
-		padding: 12px 32px;
-	}
+.sinko1intro {
+	width: 50%;
+	margin-bottom: 40px;
+	font-size: 4rem;
+	color: var(--white);
 }
 
+
 .btn1 {
+	display: flex;
+	align-items: center;
+	gap: 5px;
 	font-size: 1rem;
 	color: var(--black);
 	font-weight: 500;
@@ -195,13 +187,30 @@ a {
 	background-color: var(--white);
 	width: fit-content;
 	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s ease-in-out;
 }
 
 .btn1:hover {
-	cursor: pointer;
 	background-color: var(--gold);
-	transition: 1300ms;
+	gap: 10px;
 }
+
+/* medium screen */
+@media  (max-width: 768px) {
+	.sinko1intro{
+		font-size: 1.8rem;
+		width: 100%;
+	}
+	.sinko1-text {
+		line-height: 120%;
+		font-size: 1rem;
+	}
+	.btn1 {
+		font-size: 0.8rem;
+	}
+}
+
 /* sinko2 section */
 .sinko2-description {
 	padding: 32px 16px;
@@ -217,12 +226,14 @@ a {
 	font-size: 1.5rem;
 	text-transform: capitalize;
 }
+
 .sinko2-text {
 	font-size: 1rem;
 	font-style: inherit;
 	line-height: 1.5rem;
 	margin: 30px auto;
 	width: min(80%, 500px);
+	text-align: left;
 }
 
 .image-wrapper {
@@ -339,11 +350,13 @@ footer {
 }
 
 @media (min-width: 769px) {
-	.linkText, .linkSpan {
+	.linkText,
+	.linkSpan {
 		font-size: 1rem;
 	}
 
-	.address, .address span {
+	.address,
+	.address span {
 		font-size: 0.9rem;
 	}
 
