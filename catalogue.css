@@ -58,16 +58,6 @@ a {
 		width: 20px;
 	}
 }
-/* medium screen */
-/* @media (min-width: 320px) and(max-width:768px){
-	.headerText{
-	  font-size: 1.2rem;
-	}
-	.headerLogo{
-  height: 30px;
-  width: 30px;
-	}
-  } */
 /* desktop menu starts */
 .cta-menu {
 	width: 20%;
@@ -139,16 +129,6 @@ a {
 	}
 }
 
-/* mobile menu starts */
-.mobile-menu {
-	display: none;
-}
-
-@media (max-width: 420px) {
-	.mobile-menu {
-		display: block;
-	}
-}
 /* mobile menu ends */
 
 /* catalogue starts */
@@ -182,6 +162,11 @@ a {
 .cat-text {
   margin-top: auto;
 }
+@media(min-width:382px) and (max-width:429px){
+	.cat-text {
+		margin-top: 13px;
+	  }
+}
 
 .cat-image-wrapper {
 	background: url("./images/sinkologo.jpg");
@@ -189,20 +174,54 @@ a {
 	background-size: cover;
 	width: 50%;
 	height: 100%;
+	display: block;
 }
+@media(max-width:320px){
+	.intro-cat{
+		font-size:1.8rem;
+	}
+}
+
+@media (min-width:321px) and (max-width:381px) {
+.intro-cat{
+	font-size:2.1rem;
+}
+}
+@media (max-width: 700px) {
+	.cat-image-wrapper {
+		display: none;
+	}
+
+	.cat-flex-wrapper{
+		width: 100%;
+	}
+}
+
+@media(min-width:701px) and (max-width:907px){
+	.cat-image-wrapper{
+		background-position: center;
+	}
+	.intro-cat{
+		font-size:2rem;
+	}
+}
+
 
 .cat-img {
 	display: grid;
 	place-items: center;
-	
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	gap: 0.5rem;
+	min-width: 70%;
+	width: 100%;
+	margin: 0 auto;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 10px;
+	padding: 10px 20px;
 }
 .image {
 	display: grid;
 	place-items: center;
 	width: 100%;
-	height: 100%;
+	height: 300px;
 }
 
 

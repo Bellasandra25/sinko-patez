@@ -63,15 +63,6 @@ a {
 	}
 }
 /* medium screen */
-/* @media (min-width: 320px) and(max-width:768px){
-	.headerText{
-	  font-size: 1.2rem;
-	}
-	.headerLogo{
-  height: 30px;
-  width: 30px;
-	}
-  } */
 /* desktop menu starts */
 .cta-menu {
 	width: 20%;
